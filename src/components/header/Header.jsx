@@ -72,7 +72,7 @@ const Header = ({ type }) => {
                 Make the change and start a new path in life
               </h1>
               <p className="headerDesc">
-                Search for options below where you can get out of your environment to start to make a change in your life.
+                Search for a retreat below to reset your environment and empower you to make life changes
               </p>
               <button className="headerBtn">Sign in / Register</button>
               <div className="headerSearch">
