@@ -1,6 +1,6 @@
 import { faBed, faCalendarDays, faCar, faPerson, faPlane, faTaxi } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "./Header.css"
+import "./Header.css";
 
 import { DateRange } from "react-date-range";
 import { useState } from "react";
@@ -23,12 +23,11 @@ const Header = ({ type }) => {
     const [openOptions, setOpenOptions] = useState(false);
     const [options, setOptions] = useState({
       adult: 1,
-      children: 0,
       room: 1,
     });
   
     const navigate = useNavigate();
-  
+  {/*js for spreading state of counter */ }
     const handleOption = (name, operation) => {
       setOptions((prev) => {
         return {
@@ -52,7 +51,7 @@ const Header = ({ type }) => {
           <div className="headerList">
             <div className="headerListItem active">
               <FontAwesomeIcon icon={faBed} />
-              <span>Stays</span>
+              <span>wellness retreats</span>
             </div>
             <div className="headerListItem">
               <FontAwesomeIcon icon={faPlane} />
@@ -63,10 +62,6 @@ const Header = ({ type }) => {
               <span>Car rentals</span>
             </div>
             <div className="headerListItem">
-              <FontAwesomeIcon icon={faBed} />
-              <span>Attractions</span>
-            </div>
-            <div className="headerListItem">
               <FontAwesomeIcon icon={faTaxi} />
               <span>Airport taxis</span>
             </div>
@@ -74,11 +69,10 @@ const Header = ({ type }) => {
           {type !== "list" && (
             <>
               <h1 className="headerTitle">
-                A lifetime of discounts? It's Genius.
+                Make the change and start a new path in life
               </h1>
               <p className="headerDesc">
-                Get rewarded for your travels – unlock instant savings of 10% or
-                more with a free Lamabooking account
+                Search for options below where you can get out of your environment to start to make a change in your life.
               </p>
               <button className="headerBtn">Sign in / Register</button>
               <div className="headerSearch">
